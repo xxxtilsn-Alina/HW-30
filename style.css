@@ -1,0 +1,38 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: box-mowe;
+  animation-iteration-count: 11;
+  animation-duration: 5s;
+}
+
+.container {
+  margin-top: 200px;
+  width: 400px;
+  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@keyframes box-mowe {
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0, 300px);
+    background-color: blue;
+  }
+  50% {
+    transform: translate(300px, 300px);
+    background-color: green;
+  }
+  75% {
+    transform: translate(300px, -5px);
+    background-color: yellow;
+  }
+  100% {
+    transform: translate(-5px, 0);
+    background-color: red;
+  }
+}
